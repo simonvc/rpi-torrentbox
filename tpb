@@ -14,13 +14,15 @@ except IndexError:
 try:
   search=sys.argv[1]
   print "Searching TBP for %s" % search
-  ss="http://thepiratebay.se/search/%s/0/7/0" 
-  ss="http://pirateproxy.net/search/%s/0/7/0" 
+  ss="http://thepiratebay.se/search/%s/0/7/0" #blocked
+  ss="http://pirateproxy.net/search/%s/0/7/0" #blocked
+  ss="http://piratesniper.net/search/%s/0/7/0" 
 except IndexError:
   search="flush"
   print "Usage: tpb 'search query' [limit]"
-  ss="http://thepiratebay.se/top/all?%s" 
-  ss="http://pirateproxy.net/top/all?%s" 
+  ss="http://thepiratebay.se/top/all?%s"  #blocked
+  ss="http://pirateproxy.net/top/all?%s"  #blocked
+  ss="http://piratesniper.net/top/all?%s" 
   max_count=10
 
 
